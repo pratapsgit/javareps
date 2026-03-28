@@ -1,0 +1,19 @@
+# Core Server Settings
+server:
+  port: 8081
+
+# Custom Properties for Testing (The "Hello World" of Config)
+# You can access this in Java using @Value("${welcome.message}")
+welcome:
+  message: "Hello! This message is coming from the Git Config Repository."
+  environment: "Development-Starter"
+
+# Logging levels to help you debug your starter app
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.pratap.demo: TRACE
+
+# A dummy feature flag
+feature:
+  enable-beta-ui: false
